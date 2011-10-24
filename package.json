@@ -1,0 +1,20 @@
+{
+  "author": "Julien Biezemans <jb@jbpros.com> (http://jbpros.net)",
+  "name": "cucumber-js-example",
+  "description": "A demo of Cucumber.js running against the web",
+  "version": "0.0.0",
+  "repository": {
+    "url": ""
+  },
+  "private": true,
+  "engines": {
+    "node": "~v0.4.8"
+  },
+  "dependencies": {
+    "assert":   "0.4.9"
+  , "cucumber": "0.2.1"
+  , "html5":    "0.3.2"
+  , "zombie":   "0.10.2"
+  },
+  "devDependencies": {}
+}
