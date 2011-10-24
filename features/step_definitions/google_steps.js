@@ -19,11 +19,14 @@ var googleSteps = function() {
   When(/^I search for "(.*)"$/, function(query, callback) {
     this.browser
       .fill("q", query)
-      .pressButton("btnG", function(err) {
-        if (err)
-          throw new Error(err.message);
-        callback();
-      });
+      .pressButton(
+        "btnG",
+        function(err) {
+          if (err)
+            throw new Error(err.message);
+          callback();
+        }
+      );
   });
 
   Then(/^I see a link to "(.*)"$/, function(url, callback) {
