@@ -5,7 +5,7 @@ var googleSteps = function() {
   this.World = GoogleWorld;
 
   Given(/^I am on Google$/, function(callback) {
-    this.visitURL("http://www.google.com", callback);
+    this.visitGoogle(callback);
   });
 
   When(/^I search for "(.*)"$/, function(query, callback) {

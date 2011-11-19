@@ -6,7 +6,7 @@ var GoogleWorld = function() {
   this.browser = new zombie.Browser({runScripts:true, debug:false, htmlParser: HTML5});
 };
 
-GoogleWorld.prototype.visitURL = function(url, callback) {
+GoogleWorld.prototype.visitGoogle = function(callback) {
   this.browser.visit(
     "http://www.google.com",
     function(err, browser, status) {
