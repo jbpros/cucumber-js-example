@@ -1,19 +1,19 @@
-var GoogleWorld = require('../support/google_world');
+var CucumberJsExampleWorld = require('../support/world');
 
 var googleSteps = function() {
   var Given = When = Then = this.defineStep;
-  this.World = GoogleWorld;
+  this.World = CucumberJsExampleWorld;
 
   Given(/^I am on Google$/, function(callback) {
-    this.visitGoogle(callback);
+    this.google.visitGoogle(callback);
   });
 
   When(/^I search for "(.*)"$/, function(query, callback) {
-    this.query(query, callback);
+    this.google.query(query, callback);
   });
 
   Then(/^I see a link to "(.*)"$/, function(url, callback) {
-    this.assertDisplayedLinkToURL(url, callback);
+    this.google.assertDisplayedLinkToURL(url, callback);
   });
 };
 
