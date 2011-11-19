@@ -2,7 +2,7 @@ var zombie = require("zombie");
 var HTML5  = require("html5").HTML5
 var assert = require("assert");
 
-var GoogleLand = function() {
+var GoogleLand = function(world) {
   this.browser = new zombie.Browser({runScripts:true, debug:false, htmlParser: HTML5});
 };
 
@@ -36,4 +36,4 @@ GoogleLand.prototype.assertDisplayedLinkToURL = function(url, callback) {
   callback();
 };
 
-module.exports = GoogleLand;
+exports.Land = GoogleLand;
