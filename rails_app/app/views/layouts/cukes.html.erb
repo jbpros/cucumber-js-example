@@ -1,0 +1,17 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Destiny cukes</title>
+    <link href="/assets/cukes.css" media="screen" rel="stylesheet" type="text/css">
+    <script src="/assets/cukes.js"></script>
+  </head>
+  <body>
+    <%= yield %>
+    <iframe id="cucumber-browser" src="/"></iframe>
+    <button id="run">Cuke!</button>
+    <div id="output" class="cucumber-report"></div>
+    <div id="errors-container"><pre id="errors"></pre></div>
+  </body>
+</html>
