@@ -4,7 +4,7 @@
 
     $ cd rails_app
     $ bundle
-    $ rake db:create
+    $ rake db:setup
     $ rails s
 
 Then go to http://localhost:3000/cukes
