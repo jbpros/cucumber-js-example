@@ -7,4 +7,4 @@
     $ rake db:setup
     $ rails s
 
-Then go to http://localhost:3000/cukes
+Then go to [http://localhost:3000/cukes](http://localhost:3000/cukes).
