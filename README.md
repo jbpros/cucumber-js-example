@@ -3,7 +3,7 @@
 ### Ruby on Rails
 
     $ cd rails_app
-    $ bundle
+    $ bundle update --source coffee-script-source
     $ rake db:setup
     $ rails s
 
